@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 500px;
+}
+
+#guess-div {
+    display: flex;
+    height: 25px;
+    margin: 10px 0;
+}
+
+input {
+    margin: 0 7px;
+}
+
+#guess-text {
+    margin: 3px 0 0 0;
+}
+
+#guess-count {
+    
+}
+
+#check-el {
+    color: white;
+    margin: 10px 0 0 0;
+    background-color: red;
+}
+
+#hint-el {
+    margin: 10px 0 0 0;
+}
+
+#new-game-btn {
+    margin: 10px 0 0 0;
+}

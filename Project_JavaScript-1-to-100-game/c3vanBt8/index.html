@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title></title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Number guessing game</h1>
+        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+        <div id="guess-div">
+            <p id="guess-text">Enter a guess: </p><input type="number" id="guess-number"/><button id="guess-btn" type="button">Submit guess</button>
+        </div>
+        <p id="guesses-el">Previous guesses: </p>
+        <p id="check-el" hidden></p>
+        <p id="hint-el" hidden></p>
+        <button id="new-game-btn" hidden>Start new game</button>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
