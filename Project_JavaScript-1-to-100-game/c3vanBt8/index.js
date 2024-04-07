@@ -12,14 +12,14 @@ let round = 0
 //When starting a new game, the correctNumber remains the same despite trying to reset it with the newGameBtn's function//
 
 guessBtn.addEventListener("click", function() {
-    if (guessNumber.value == correctNumber) {
+    if (Number(guessNumber.value) == correctNumber) {
         guessesEl.textContent += guessNumber.value + ", ";
         checkEl.removeAttribute("hidden");
         checkEl.style.backgroundColor = "green";
         checkEl.textContent = "Congratulations! You got it right!";
         guessBtn.setAttribute("disabled", "");
         newGameBtn.removeAttribute("hidden");
-    } else if (guessNumber.value > correctNumber) {
+    } else if (Number(guessNumber.value) > correctNumber) {
         guessesEl.textContent += guessNumber.value + ", ";
         checkEl.removeAttribute("hidden");
         checkEl.textContent = "Wrong!";
@@ -32,7 +32,7 @@ guessBtn.addEventListener("click", function() {
                 guessBtn.setAttribute("disabled", "");
             }
         }
-    } else if (guessNumber.value < correctNumber) {
+    } else if (Number(guessNumber.value) < correctNumber) {
         guessesEl.textContent += guessNumber.value + ", ";
         checkEl.removeAttribute("hidden");
         checkEl.textContent = "Wrong!";
